@@ -26,7 +26,7 @@
   --border: oklch(34.977% 0.07055 242.771 / 0.1);
   --text-primary: oklch(26.536% 0.05176 241.223);
   --text-primary-on-color: white;
-  --text-secondary: oklch(65.711% 0.02374 235.316);
+  --text-secondary: oklch(50% 0.02374 235.316);
   --bg-primary: white;
   --bg-button-primary: oklch(26.536% 0.05176 241.223);
   --bg-section-secondary: oklch(97.938% 0.00453 215.512);
