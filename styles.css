@@ -4,8 +4,6 @@
   padding: 0;
   list-style: none;
   font-family: "Geist", sans-serif;
-  font-weight: 500;
-  color: var(--text-primary);
 }
 
 @font-face {
@@ -55,7 +53,6 @@ section {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: var(--text-primary);
   padding: 0px 80px;
   height: 72px;
   background-color: var(--bg-primary);
@@ -67,12 +64,15 @@ nav ul {
 }
 
 .nav-link {
+  font-weight: 500;
+  line-height: 22px;
   text-decoration: none;
   color: var(--text-primary);
 }
 
 .btn {
   font-size: 16px;
+  font-weight: 500;
   line-height: 24px;
   text-decoration: none;
   background-color: var(--bg-button-primary);
@@ -120,12 +120,15 @@ p {
 
 .large-p {
   font-size: 18px;
+  font-weight: 500;
   line-height: 24px;
 }
 
 h3 {
   font-size: 20px;
+  font-weight: 600;
   line-height: 26px;
+  color: var(--text-primary);
 }
 
 .hero {
@@ -156,6 +159,7 @@ h3 {
 h2 {
   color: var(--text-primary);
   font-size: 26px;
+  font-weight: 500;
   line-height: 32px;
   letter-spacing: -1px;
 }
@@ -237,7 +241,14 @@ form {
   text-wrap-style: pretty;
 }
 
-.form div {
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.input,
+.select {
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -245,7 +256,10 @@ form {
 
 .form label {
   font-size: 14px;
+  font-weight: 500;
   line-height: 22px;
+  color: var(--text-primary);
+  margin-top: 8px;
 }
 
 .form input {
@@ -259,6 +273,7 @@ form {
 
 .form input::placeholder {
   font-size: 14px;
+  font-weight: 500;
   line-height: 22px;
   color: var(--text-secondary);
 }
@@ -276,6 +291,10 @@ form {
   border-radius: 4px;
   box-shadow: 0 1px 2px 0 var(--shadow-sm);
   background-color: var(--bg-primary);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  color: var(--text-secondary);
 }
 
 /* Footer */

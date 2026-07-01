@@ -14,8 +14,6 @@
     <meta name="author" content="Maycon Douglas" />
     <meta name="copyright" content="© 2026 StackHub" />
     <meta name="robots" content="index,follow" />
-    <meta http-equiv="content-language" content="pt-br" />
-
     <meta property="og:title" content="StackHub" />
     <meta
       property="og:description"
@@ -33,34 +31,22 @@
     <link rel="icon" href="/files/ico.svg" type="image/x-icon" />
   </head>
   <body>
-    <nav>
+    <nav aria-label="Navegação princiapl">
       <div class="container nav">
         <img src="/files/stack_logo.svg" alt="company logo" height="32" />
         <ul>
           <li>
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="nav-link"
+            <a href="#" target="" rel="noopener noreferrer" class="nav-link"
               >Explorar</a
             >
           </li>
           <li>
-            <a
-              href="http://"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="nav-link"
+            <a href="#" target="" rel="noopener noreferrer" class="nav-link"
               >Guias</a
             >
           </li>
           <li>
-            <a
-              href="http://"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="nav-link"
+            <a href="#" target="" rel="noopener noreferrer" class="nav-link"
               >Login</a
             >
           </li>
@@ -86,11 +72,11 @@
           </div>
         </div>
       </section>
-      <section class="features-section">
+      <section class="features-section" aria-labelledby="features">
         <div class="container">
           <div class="section-header">
             <span class="tag">Curadoria Inteligente</span>
-            <h2>
+            <h2 id="features">
               Para profissionais que buscam eficiência.
               <span class="text-light"
                 >Apenas ferramentas testadas e aprovadas que.</span
@@ -101,7 +87,7 @@
           <ul class="card-row">
             <li>
               <div class="card">
-                <img src="/files/Feature_1.png" alt="feature1" />
+                <img src="/files/Feature_1.png" alt="" />
                 <div class="card-description">
                   <p class="large-p">
                     Para profissionais que buscam eficiência.
@@ -115,7 +101,7 @@
             </li>
             <li>
               <div class="card">
-                <img src="/files/Feature_2.png" alt="feature2" />
+                <img src="/files/Feature_2.png" alt="" />
                 <div class="card-description">
                   <p class="large-p">
                     Para profissionais que buscam eficiência.
@@ -129,7 +115,7 @@
             </li>
             <li>
               <div class="card">
-                <img src="/files/Feature_3.png" alt="feature3" />
+                <img src="/files/Feature_3.png" alt="" />
                 <div class="card-description">
                   <p class="large-p">
                     Para profissionais que buscam eficiência.
@@ -144,11 +130,11 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section aria-labelledby="trending-tools">
         <div class="container">
           <div class="section-header">
             <span class="tag">Curadoria Inteligente</span>
-            <h2>
+            <h2 id="trending-tools">
               Para profissionais que buscam eficiência.
               <span class="text-light"
                 >Apenas ferramentas testadas e aprovadas que.</span
@@ -201,13 +187,13 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section aria-labelledby="contribute">
         <div class="container">
-          <form action="">
+          <form action="/submit-tool">
             <div class="form">
               <div class="form-copy">
                 <span class="tag">Contribua</span>
-                <h2>
+                <h2 id="contribute">
                   O stackhub cresce com a comunidade.
                   <span class="text-light">
                     Contribua enviando suas sugestões e ajude outros
@@ -215,8 +201,8 @@
                   </span>
                 </h2>
               </div>
-              <div>
-                <div>
+              <div class="input-container">
+                <div class="input">
                   <label for="name">Nome do app</label>
                   <input
                     type="text"
@@ -225,7 +211,7 @@
                     placeholder="Codex"
                   />
                 </div>
-                <div>
+                <div class="input">
                   <label for="url">URL</label>
                   <input
                     type="url"
@@ -234,10 +220,10 @@
                     placeholder="www.openai.com/codex"
                   />
                 </div>
-                <div>
+                <div class="select">
                   <label for="category-select">Categoria</label>
                   <select name="category" id="category-select">
-                    <option value="" selected hidden>
+                    <option value="" disabled selected hidden>
                       Por favor, selecione uma categoria
                     </option>
                     <option value="coding">Coding</option>
